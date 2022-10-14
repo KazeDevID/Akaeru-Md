@@ -37,6 +37,7 @@ Script ini untuk semua orang, bukan untuk Dijual. Dan juga sc in hasil copas doa
 - [x] Tools 
 - [x] Other
 - [x] Owner
+- [x] Group
 - [x] Fun
 ---------
 
