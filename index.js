@@ -34,7 +34,7 @@ function Person(Owner, BotName) {
   this.BotName = BotName;
 }
 // -------[ END ]------- \\
-
+/*
 // FUNCTION LOG GERAK
 var spinner = { 
   "interval": 120,
@@ -268,7 +268,7 @@ var getGlobalSpinner = (disableSpins = false) => {
 spins = getGlobalSpinner(false)
 var forks = (id, text) => {
 	spins.add(id, {text: text})
-	}
+	}*/
 // -------[ END ]------- \\
 
 let spc1 = ' '
