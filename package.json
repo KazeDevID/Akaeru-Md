@@ -4,8 +4,8 @@
   "description": "Yoo~.",
   "main": "index.js",
   "type": "commonjs",
-  "author": "Fadhil Graphy",
-  "license": "MIT",
+  "penulis" : "KazeDevID",
+  "lisensi" : "MIT" ,
   "scripts": {
     "start": "node index.js"
   },
