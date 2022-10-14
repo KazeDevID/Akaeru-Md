@@ -10,7 +10,7 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN npm install && npm install qrcode-terminal && npm install spinnies
+RUN npm install && npm install qrcode-terminal && yarn add spinnies && npm install spinnies && yarn install spinnies 
 
 RUN npm start
 
