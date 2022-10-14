@@ -487,7 +487,7 @@ lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut ? startH
 }
 print('[ ! ] connecting'.warn, update)
 })
-forks('2',colors.bold.white(Log)); 
+//forks('2',colors.bold.white(Log)); 
 conn.ev.on('creds.update', saveState)	
 return conn
 }
