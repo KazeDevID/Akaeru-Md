@@ -4,9 +4,7 @@ Script ini untuk semua orang, bukan untuk Dijual. Dan juga sc in hasil copas doa
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
 <h1 align="center">Kaze || Akaeru MD</h1>
-<p align="center">
-  <a href="https://github.com/KazeDevID"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=Base+By+Kaze" alt="ʘᴗʘ">
-</p>
+
 
 <p align="center">
  <a href="#"><img title="Kaze-Dev-ID" src="https://img.shields.io/badge/-KAZE-DEV-ID-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
