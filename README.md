@@ -6,9 +6,7 @@ Script ini untuk semua orang, bukan untuk Dijual. Dan juga sc in hasil copas doa
 <h1 align="center">Kaze || Akaeru MD</h1>
 
 
-<p align="center">
- <a href="#"><img title="Kaze-Dev-ID" src="https://img.shields.io/badge/-KAZE-DEV-ID-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
-</p>
+
 <p align="center">
 <a href="https://github.com/KazeDevID"><img title="Author" src="https://img.shields.io/badge/AUTHOR-KAZE-green?style=for-the-badge&logo=github"></a>
     
