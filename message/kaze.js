@@ -37,6 +37,7 @@ const { exec, spawn } = require('child_process');
 const toMs = require("ms")
 global.prem = require("../library/premium")
 let { allmenu } = require('./config')
+let { BData } = require('./config')
 // -------[ END ]------- \\
 
 let print = console.log;
