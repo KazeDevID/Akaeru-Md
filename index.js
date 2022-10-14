@@ -14,7 +14,7 @@ const { color, mylog, infolog } = require("./library/color")
 const PhoneNumber = require('awesome-phonenumber')
 const pino = require('pino')
 const path = require('path')
-const spin = require('spinnies')
+//const spin = require('spinnies')
 const fileType = require('file-type')
 const FileType = require('file-type')
 const { sleep, getSizeMedia } = require('./library/function.js');
@@ -487,7 +487,7 @@ lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut ? startH
 }
 print('[ ! ] connecting'.warn, update)
 })
-forks('2',colors.bold.white(Log)); 
+//forks('2',colors.bold.white(Log)); 
 conn.ev.on('creds.update', saveState)	
 return conn
 }
