@@ -155,6 +155,7 @@ node .
 * [`My God`]
 * [`My Family`]
 * [`Kaze(base)`](https://github.com/KazeDevID)
+* [`Atak(membantu mengembangin)`] (https://github.com/Atak676) 
 * [`All Friends`]
 * [`All Contributors`]
 * [`All Creator Bot`]
