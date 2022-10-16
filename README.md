@@ -39,6 +39,7 @@ Script ini untuk semua orang, bukan untuk Dijual. Dan juga sc in hasil copas doa
 - [x] Owner
 - [x] Group
 - [x] Fun
+- [x] Cerpen 
 ---------
 
 ## `SETTING`
