@@ -88,7 +88,8 @@ exports.allmenu = (sender, prefix, pushname) => {
 ││ 
 ││⫹⫺ ${prefix}tiktok _url_ 
 ││⫹⫺ ${prefix}tiktokaudio _url_ 
-││⫹⫺ ${prefix}ytmp3 _url_ 
+││⫹⫺ ${prefix}ytmp3 _url_ 🚫
+││⫹⫺ ${prefix}ytmp4 _url_ 🚫
 ││
 │╰≻
 │
