@@ -37,10 +37,11 @@ Script ini untuk semua orang, bukan untuk Dijual. Dan juga sc in hasil copas doa
 - [x] Tools 
 - [x] Other
 - [x] Owner
-- [x] Group
 - [x] Fun
-- [x] Cerpen 
 ---------
+
+## Node Module👇
+https://terabox.com/s/1iCJTpibLuW2F-TDb1fzxyA
 
 ## `SETTING`
 
@@ -156,7 +157,6 @@ node .
 * [`My God`]
 * [`My Family`]
 * [`Kaze(base)`](https://github.com/KazeDevID)
-* [`Atak(membantu mengembangin)`](https://github.com/Atak676) 
 * [`All Friends`]
 * [`All Contributors`]
 * [`All Creator Bot`]
