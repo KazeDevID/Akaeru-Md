@@ -37,7 +37,8 @@ const speed = require('performance-now')
 const { exec, spawn } = require('child_process');
 const toMs = require("ms")
 global.prem = require("../library/premium")
-let { allmenu, BData } = require('./config')
+let { BData } = require('./config')
+let { allmenu, simplemenu, ownermenu, downloadmenu, searchmenu, groupmenu, toolsmenu, funmenu, othermenu, cerpenmenu } = require('./menu')
 let { pinterest, styletext, cerpen } = require('../library/scraper')
 // -------[ END ]------- \\
 
@@ -166,11 +167,9 @@ const fdoc = {key : {participant : '0@s.whatsapp.net'},message: {documentMessage
 
 switch(command){
 
-
-
-// START \\
-			case'menu':
-			case'help': {
+// MENU \\
+case 'menu':
+			case 'help': {
 var teks = allmenu(m.sender, prefix, m.pushName)
 ,
 					btn = [{
@@ -185,6 +184,11 @@ var teks = allmenu(m.sender, prefix, m.pushName)
                                 }
                             }, {
                                 quickReplyButton: {
+                                    displayText: 'SIMPLE MENU',
+                                    id: 'simplemenu'
+                                }  
+                            }, {
+                                quickReplyButton: {
                                     displayText: 'OWNER',
                                     id: 'owner'
                                 }  
@@ -196,17 +200,318 @@ var teks = allmenu(m.sender, prefix, m.pushName)
                             }]
 
 				conn.send5ButLoc(from, teks, Mfooter, global.thumb, btn)
-				/*conn.sendMessage(from, {text : `JANGAN LUPA FOLLOW GITHUB OWNER`}, {quoted :{
-				key: { fromMe: false,
-				participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6283102650464-1589321480@g.us" } : {})},
-				message: { "extendedTextMessage": {
-				"text": `*Hallo* _${pushname} 👋_`,
-				"title": Titlenyo,
-				'jpegThumbnail': global.thumb}}}}
-				)*/
  				 }                      
 				break
 
+            case 'simplemenu':{
+var teks = simplemenu(m.sender, prefix, m.pushName)
+,
+                btn = [{
+                                urlButton: {
+                                    displayText: 'INSTAGRAM',
+                                    url: Uig
+                                }
+                            }, {
+                                urlButton: {
+                                    displayText: 'GROUP BOT',
+                                    url: Ugc
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'ALL MENU',
+                                    id: 'menu'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'OWNER',
+                                    id: 'owner'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'SCRIPT BOT',
+                                    id: 'sc'
+                                }
+                            }]
+
+				conn.send5ButLoc(from, teks, Mfooter, global.thumb, btn)
+ 				 }                      
+				break
+
+case 'ownermenu':{
+var teks = ownermenu(m.sender, prefix, m.pushName)
+,
+                btn = [{
+                                urlButton: {
+                                    displayText: 'INSTAGRAM',
+                                    url: Uig
+                                }
+                            }, {
+                                urlButton: {
+                                    displayText: 'GROUP BOT',
+                                    url: Ugc
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'ALL MENU',
+                                    id: 'menu'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'OWNER',
+                                    id: 'owner'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'SCRIPT BOT',
+                                    id: 'sc'
+                                }
+                            }]
+
+				conn.send5ButLoc(from, teks, Mfooter, global.thumb, btn)
+ 				 }                      
+				break
+
+case 'downloadmenu':{
+var teks = downloadmenu(m.sender, prefix, m.pushName)
+,
+                btn = [{
+                                urlButton: {
+                                    displayText: 'INSTAGRAM',
+                                    url: Uig
+                                }
+                            }, {
+                                urlButton: {
+                                    displayText: 'GROUP BOT',
+                                    url: Ugc
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'ALL MENU',
+                                    id: 'menu'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'OWNER',
+                                    id: 'owner'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'SCRIPT BOT',
+                                    id: 'sc'
+                                }
+                            }]
+
+				conn.send5ButLoc(from, teks, Mfooter, global.thumb, btn)
+ 				 }                      
+				break
+
+case 'searchmenu':{
+var teks = searchmenu(m.sender, prefix, m.pushName)
+,
+                btn = [{
+                                urlButton: {
+                                    displayText: 'INSTAGRAM',
+                                    url: Uig
+                                }
+                            }, {
+                                urlButton: {
+                                    displayText: 'GROUP BOT',
+                                    url: Ugc
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'ALL MENU',
+                                    id: 'menu'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'OWNER',
+                                    id: 'owner'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'SCRIPT BOT',
+                                    id: 'sc'
+                                }
+                            }]
+
+				conn.send5ButLoc(from, teks, Mfooter, global.thumb, btn)
+ 				 }                      
+				break
+
+case 'groupmenu':{
+var teks = groupmenu(m.sender, prefix, m.pushName)
+,
+                btn = [{
+                                urlButton: {
+                                    displayText: 'INSTAGRAM',
+                                    url: Uig
+                                }
+                            }, {
+                                urlButton: {
+                                    displayText: 'GROUP BOT',
+                                    url: Ugc
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'ALL MENU',
+                                    id: 'menu'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'OWNER',
+                                    id: 'owner'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'SCRIPT BOT',
+                                    id: 'sc'
+                                }
+                            }]
+
+				conn.send5ButLoc(from, teks, Mfooter, global.thumb, btn)
+ 				 }                      
+				break
+
+case 'toolsmenu':{
+var teks = toolsmenu(m.sender, prefix, m.pushName)
+,
+                btn = [{
+                                urlButton: {
+                                    displayText: 'INSTAGRAM',
+                                    url: Uig
+                                }
+                            }, {
+                                urlButton: {
+                                    displayText: 'GROUP BOT',
+                                    url: Ugc
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'ALL MENU',
+                                    id: 'menu'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'OWNER',
+                                    id: 'owner'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'SCRIPT BOT',
+                                    id: 'sc'
+                                }
+                            }]
+
+				conn.send5ButLoc(from, teks, Mfooter, global.thumb, btn)
+ 				 }                      
+				break
+
+case 'funmenu':{
+var teks = funmenu(m.sender, prefix, m.pushName)
+,
+                btn = [{
+                                urlButton: {
+                                    displayText: 'INSTAGRAM',
+                                    url: Uig
+                                }
+                            }, {
+                                urlButton: {
+                                    displayText: 'GROUP BOT',
+                                    url: Ugc
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'ALL MENU',
+                                    id: 'menu'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'OWNER',
+                                    id: 'owner'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'SCRIPT BOT',
+                                    id: 'sc'
+                                }
+                            }]
+
+				conn.send5ButLoc(from, teks, Mfooter, global.thumb, btn)
+ 				 }                      
+				break
+
+case 'othermenu':{
+var teks = othermenu(m.sender, prefix, m.pushName)
+,
+                btn = [{
+                                urlButton: {
+                                    displayText: 'INSTAGRAM',
+                                    url: Uig
+                                }
+                            }, {
+                                urlButton: {
+                                    displayText: 'GROUP BOT',
+                                    url: Ugc
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'ALL MENU',
+                                    id: 'menu'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'OWNER',
+                                    id: 'owner'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'SCRIPT BOT',
+                                    id: 'sc'
+                                }
+                            }]
+
+				conn.send5ButLoc(from, teks, Mfooter, global.thumb, btn)
+ 				 }                      
+				break
+
+case 'cerpenmenu':{
+var teks = cerpenmenu(m.sender, prefix, m.pushName)
+,
+                btn = [{
+                                urlButton: {
+                                    displayText: 'INSTAGRAM',
+                                    url: Uig
+                                }
+                            }, {
+                                urlButton: {
+                                    displayText: 'GROUP BOT',
+                                    url: Ugc
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'ALL MENU',
+                                    id: 'menu'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'OWNER',
+                                    id: 'owner'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'SCRIPT BOT',
+                                    id: 'sc'
+                                }
+                            }]
+
+				conn.send5ButLoc(from, teks, Mfooter, global.thumb, btn)
+ 				 }                      
+				break
+// -------[ END ]------- \\
+
+
+// START \\
 case 'ping': case 'botstatus': case 'statusbot': {
            	  const used = process.memoryUsage()
            	  const cpus = os.cpus().map(cpu => {
