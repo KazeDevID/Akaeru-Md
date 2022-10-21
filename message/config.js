@@ -5,11 +5,11 @@ const { times, runtime, sender, pushname, formatDate, tanggal } = require('../li
 
 // Website Api
 global.Api = {
-	ampibi: 'https://ampibismm.my.id',
+	akaeru: 'https://akaeru-api.herokuapp.com',
 }
 
 // Apikey Website Api
-global.ApiKey = 'coderevolution' 
+global.ApiKey = 'APIKEY LU' // chat nomor gw untuk mendapatkan apikey nya
 
 NameOwner = 'KazeDevID'// Nama lu
 NameBot = 'Akaeru Md'// Nama bot lu
