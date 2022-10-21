@@ -108,16 +108,16 @@ print(`${e}`.error)
 // ANTICALL \\
     conn.ev.on('call', async (anticoll) => {
     let botNumber = await conn.decodeJid(conn.user.id)
-    let anj = JSON.parse(fs.readFileSync('./metadata/setting.json'));
+    let anj = JSON.parse(fs.readFileSync('./metadata/anticall.json'));
     if (!anj.setting.anticall) return
     console.log(anticoll)
-    for (let dill of anticoll) {
-    if (dill.isGroup == false) {
-    if (dill.status == "offer") {
-    let asu = await conn.sendTextWithMentions(dill.from, `Maaf Bot Tidak Dapat menerima panggilan ${dill.isVideo ? `video` : `suara`}. Maaf @${dill.from.split('@')[0]} kamu akan diblockir. Jika tidak sengaja silahkan hubungi Owner untuk dibuka !`)
-    conn.sendContact(dill.from, global.owner, asu)
+    for (let Dolly of anticoll) {
+    if (Dolly.isGroup == false) {
+    if (Dolly.status == "offer") {
+    let asu = await conn.sendTextWithMentions(Dolly.from, `Maaf Bot Tidak Dapat menerima panggilan ${Dolly.isVideo ? `video` : `suara`}. Maaf @${Dolly.from.split('@')[0]} kamu akan diblockir. Jika tidak sengaja silahkan hubungi Owner untuk dibuka !`)
+    conn.sendContact(Dolly.from, global.owner, asu)
     await sleep(8000)
-    await conn.updateBlockStatus(dill.from, "block")
+    await conn.updateBlockStatus(Dolly.from, "block")
     }
     }
     }
