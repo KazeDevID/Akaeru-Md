@@ -30,6 +30,7 @@
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.12",
     "child_process": "^1.0.2",
+    "zeee-api": "^1.0.0",
     "colors": "^1.4.0",
     "crypto": "^1.0.1",
     "figlet": "^1.5.2",
