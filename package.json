@@ -34,7 +34,7 @@
     "colors": "^1.4.0",
     "crypto": "^1.0.1",
     "figlet": "^1.5.2",
-    "file-type": "16.5.3",
+    "file-type": "16.5.4",
     "fluent-ffmpeg": "^2.1.2",
     "fs": "^0.0.1-security",
     "hikki-me": "^2.0.0",
